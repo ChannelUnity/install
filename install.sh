@@ -460,9 +460,9 @@ if should_install_command_line_tools; then
   ohai "The Xcode Command Line Tools will be installed."
 fi
 
-if [[ -t 0 && -z "${CI-}" ]]; then
-  wait_for_user
-fi
+#if [[ -t 0 && -z "${CI-}" ]]; then
+#  wait_for_user
+#fi
 
 if [[ -d "${HOMEBREW_PREFIX}" ]]; then
   if [[ "${#chmods[@]}" -gt 0 ]]; then
